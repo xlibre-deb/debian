@@ -1,18 +1,6 @@
 # Debian Repository for XLibre
 
 ## Install
-### Using extrepo
-
-```sh
-sudo apt install -y extrepo
-sudo extrepo enable xlibre
-sudo apt update
-sudo apt install xlibre
-```
-
-Thanks to Wouter Verhelst ([#9](https://github.com/xlibre-deb/debian/issues/9)).
-
-### Manually
 
 ```sh
 sudo apt-get update
@@ -33,6 +21,15 @@ EOF
 
 sudo apt-get update
 sudo apt-get install xlibre
+```
+
+Or using extrepo: [#9](https://github.com/xlibre-deb/debian/issues/9)
+
+```sh
+sudo apt install -y extrepo
+sudo extrepo enable xlibre
+sudo apt update
+sudo apt install xlibre
 ```
 
 ## For Debian 12 (bookworm) users
