@@ -2,6 +2,48 @@ Package: xlibre-server
 Format: 3.0 (quilt)
 Binary: xserver-xlibre-core, xserver-xlibre-core-udeb, xserver-xlibre-dev, xserver-xlibre-xnest, xserver-xlibre-xvfb, xserver-xlibre-xephyr, xserver-xlibre-common, xlibre-server-source, xserver-xlibre-legacy
 Architecture: any all
+Version: 2:25.0.0.11-1
+Maintainer: apebl <a@pebl.cc>
+Standards-Version: 3.9.8
+Build-Depends: debhelper-compat (= 12), po-debconf, quilt, pkgconf, bison, flex, xutils-dev (>= 1:7.6+4), xfonts-utils (>= 1:7.5+1), x11proto-dev (>= 2024.1), xtrans-dev (>= 1.3.5), libxau-dev (>= 1:1.0.5-2), libxcvt-dev, libxdmcp-dev (>= 1:0.99.1), libxfont-dev (>= 1:2.0.1), libxkbfile-dev (>= 1:0.99.1), libpixman-1-dev (>= 0.27.2), libpciaccess-dev (>= 0.12.901), nettle-dev, libudev-dev (>= 151-3) [linux-any], libselinux1-dev (>= 2.0.80) [linux-any], libaudit-dev [linux-any], libdrm-dev (>= 2.4.107-5~) [!hurd-any], libglvnd-dev, mesa-common-dev, libunwind-dev [amd64 arm64 armel hppa i386 ia64 mips64 mips64el mipsel powerpc powerpcspe ppc64 ppc64el sh4], libxmuu-dev (>= 1:0.99.1), libxext-dev (>= 1:0.99.1), libx11-dev (>= 2:1.6), libxrender-dev (>= 1:0.9.0), libxi-dev (>= 2:1.8), libxpm-dev (>= 1:3.5.3), libxaw7-dev (>= 1:0.99.1), libxt-dev (>= 1:0.99.1), libxmu-dev (>= 1:0.99.1), libxtst-dev (>= 1:0.99.1), libxres-dev (>= 1:0.99.1), libxfixes-dev (>= 1:3.0.0), libxv-dev, libxinerama-dev, libxshmfence-dev (>= 1.1) [!hurd-any], libepoxy-dev [linux-any kfreebsd-any], libegl1-mesa-dev [linux-any kfreebsd-any], libgbm-dev (>= 10.2) [linux-any kfreebsd-any], libx11-xcb-dev, libxcb1-dev, libxcb-xkb-dev, libxcb-shape0-dev, libxcb-render0-dev, libxcb-render-util0-dev, libxcb-util-dev, libxcb-image0-dev, libxcb-icccm4-dev, libxcb-shm0-dev, libxcb-keysyms1-dev, libxcb-randr0-dev, libxcb-xv0-dev, libxcb-glx0-dev, libxcb-xf86dri0-dev (>= 1.6), xauth <!nocheck>, xkb-data, x11-utils <!nocheck>, x11-xkb-utils, libbsd-dev, libdbus-1-dev (>= 1.0) [linux-any] <!nosystemd>, libsystemd-dev [linux-any] <!nosystemd>, systemd-dev [linux-any], meson
+Build-Depends-Indep: xz-utils
+Testsuite: autopkgtest
+Testsuite-Triggers: x11-utils, xauth, xvfb
+Homepage: https://github.com/X11Libre
+Vcs-Browser: https://github.com/xlibre-deb/xlibre-server
+Vcs-Git: https://github.com/xlibre-deb/xlibre-server.git
+Directory: dists/trixie/pool/main/source
+Package-List:
+ xlibre-server-source deb x11 optional arch=all
+ xserver-xlibre-common deb x11 optional arch=all
+ xserver-xlibre-core deb x11 optional arch=any
+ xserver-xlibre-core-udeb udeb debian-installer optional arch=any
+ xserver-xlibre-dev deb x11 optional arch=any
+ xserver-xlibre-legacy deb x11 optional arch=any
+ xserver-xlibre-xephyr deb x11 optional arch=any
+ xserver-xlibre-xnest deb x11 optional arch=any
+ xserver-xlibre-xvfb deb x11 optional arch=any
+Files:
+ 12988f090540acf35313dda94b812871 3589 xlibre-server_25.0.0.11-1.dsc
+ e1d39243d02422c9b2e60a0b183d1aa5 5414788 xlibre-server_25.0.0.11.orig.tar.gz
+ 338150edb4ea08e89006eb3e43f8a51f 92452 xlibre-server_25.0.0.11-1.debian.tar.xz
+Checksums-Sha1:
+ a87fd20bfbb6fa8dd5d4668f53145da8ef94915e 3589 xlibre-server_25.0.0.11-1.dsc
+ 0632bda2d759070b9f38f8fd9f361f78c606dd7e 5414788 xlibre-server_25.0.0.11.orig.tar.gz
+ bcbb42932f3bf60b7a787c4e2f6c9b04493722a8 92452 xlibre-server_25.0.0.11-1.debian.tar.xz
+Checksums-Sha256:
+ 6a05b86b049133d50973dad4475114346ddbc59e67e91672f7314433c2c6a926 3589 xlibre-server_25.0.0.11-1.dsc
+ 87cd9aaf57ca5b9bc3c83a185ec11bc6e705c0c490219e5407bf94177db9fadf 5414788 xlibre-server_25.0.0.11.orig.tar.gz
+ 98c8a45377a3f026d3894acb5d74f350122ae2ae7f54854ebf57a9b78361f2ee 92452 xlibre-server_25.0.0.11-1.debian.tar.xz
+Checksums-Sha512:
+ 78a0e066434145ca8125e51ee4788b29426932edd4180d27f4d15423a7629caa79d1b41d241913ae0719a5a6634dc0d3c759514b935eabbb77b6bc3fe00ee12d 3589 xlibre-server_25.0.0.11-1.dsc
+ cfb26e8630d8c8dc82d99c314890018039ec2c8ac52df2cb0ea2a2b33a753318ffe83937ddd16549d13865e8b00d3cdfa6be123722f610ac5fce9e3c268062c2 5414788 xlibre-server_25.0.0.11.orig.tar.gz
+ a00a0d7a5472eb40feaf8c53e8d8c8aef80a8032d537dfed6e2fee13311e2c34c44547762b49082f86a6633c07782941e79f0534faebd47a25aad6daf867eeec 92452 xlibre-server_25.0.0.11-1.debian.tar.xz
+
+Package: xlibre-server
+Format: 3.0 (quilt)
+Binary: xserver-xlibre-core, xserver-xlibre-core-udeb, xserver-xlibre-dev, xserver-xlibre-xnest, xserver-xlibre-xvfb, xserver-xlibre-xephyr, xserver-xlibre-common, xlibre-server-source, xserver-xlibre-legacy
+Architecture: any all
 Version: 2:25.0.0.9-4
 Maintainer: apebl <a@pebl.cc>
 Standards-Version: 3.9.8
