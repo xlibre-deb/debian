@@ -1606,39 +1606,39 @@ Description: XLibre X server -- VESA display driver
 
 Package: xserver-xlibre-video-vmware-dbgsym
 Architecture: amd64
-Version: 1:13.4.0.3-1
+Version: 1:13.4.0.3-2
 Auto-Built-Package: debug-symbols
 Priority: optional
 Section: debug
 Source: xserver-xlibre-video-vmware
 Maintainer: apebl <a@pebl.cc>
 Installed-Size: 160
-Depends: xserver-xlibre-video-vmware (= 1:13.4.0.3-1)
-Filename: dists/forky/pool/main/amd64/xserver-xlibre-video-vmware-dbgsym_13.4.0.3-1_amd64.deb
-Size: 129468
-MD5sum: af8bab1302aa2687f0136da95739e9e3
-SHA1: dddb0e908c5505f3752f3f6d725c4927989c8243
-SHA256: a1b8a79d98a12085149f2299c35d5ffc7e013fe5e04e71ba8c611504471543d7
-SHA512: 07171e42e12a96077274650d9673dd3001dd0a6c5b4585cd084700b133b36528742f9994a89f2c3d8227e51a5beef9431dd3d826b759a7d09161a1dce2482360
+Depends: xserver-xlibre-video-vmware (= 1:13.4.0.3-2)
+Filename: dists/forky/pool/main/amd64/xserver-xlibre-video-vmware-dbgsym_13.4.0.3-2_amd64.deb
+Size: 129440
+MD5sum: 9a0c83cd88b24b409e1834af283e54d6
+SHA1: 471dcf025b1134b360cc68cdb577edf6a9ae89d5
+SHA256: db917284231dcd59c48d8ec5e345fb5e57313ae44974795baabcfb70a3d42433
+SHA512: a90bfddb45709f6fd8813d6b407a573c9af6e55af70d70b797f69dbedfb6cdeb784fdddc642421dfef05a4a09e181ed9ed7f4a03f5afa9684ecff79f9a7db862
 Description: debug symbols for xserver-xlibre-video-vmware
-Build-Ids: 3d6da098c6fb465a893e4fce61d7aaab77f5fe2a 9fcdf6813de9a862980aac8068f74eaf62835510
+Build-Ids: 3e538c5d411e2b9f4bce0b4cad156d9f7dc5b293 9fcdf6813de9a862980aac8068f74eaf62835510
 
 Package: xserver-xlibre-video-vmware
 Architecture: amd64
-Version: 1:13.4.0.3-1
+Version: 1:13.4.0.3-2
 Priority: optional
 Section: x11
 Maintainer: apebl <a@pebl.cc>
 Installed-Size: 101
-Provides: xlibre-driver-video, xserver-xorg-video-vmware (= 1:13.4.0.3-1)
+Provides: xlibre-driver-video, xserver-xorg-video-vmware (= 1:13.4.0.3-2)
 Depends: libc6 (>= 2.38), libx11-6 (>= 2:1.4.99.1), libxext6, xorg-video-abi-28, xserver-xlibre-core (>= 25.0.0.8)
 Conflicts: xserver-xorg-video-vmware
-Filename: dists/forky/pool/main/amd64/xserver-xlibre-video-vmware_13.4.0.3-1_amd64.deb
-Size: 29748
-MD5sum: 1859398ec398b537c4cb9724355fef17
-SHA1: 00f44fde47b778e676d9c04e8a8d3a93ecbd6d66
-SHA256: b4130c0d608d61d57e80ef9a512074a73fe7afd820163c28d59cd5efdb8b59d3
-SHA512: 58b008db89f818512fbadcad549d3be02625b92e4a58b785288f23eb3605a22a70c611c7dfb24ec88eb2272ae21e71a74a31b56af11df1f397f7ba48c91fb2e5
+Filename: dists/forky/pool/main/amd64/xserver-xlibre-video-vmware_13.4.0.3-2_amd64.deb
+Size: 29796
+MD5sum: cb371d67722ed3b83174445b5e0d2806
+SHA1: 788f72f733fdabf255019efe10f5e4742c84b97c
+SHA256: bdd6b3fc44f945bd9371fa63ef01ceb23dbd2b138039793a4a920b1dea66b470
+SHA512: 9c134c2f98fd4b8c4ec19f72cd8a629768a0dc04794d46e9b6cc313841b0965a2acdcd0d8007eae9f00bfb75982cced074aa306f4cb6d0c3bc4193c34194709c
 Homepage: https://github.com/X11Libre
 Description: XLibre X server -- VMware display driver
  This package provides the driver for VMware client sessions, i.e. if Linux
